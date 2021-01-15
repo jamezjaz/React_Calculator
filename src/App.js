@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        REACT CALCULATOR
+        <h3>REACT CALCULATOR</h3>
       </header>
     </div>
   );
