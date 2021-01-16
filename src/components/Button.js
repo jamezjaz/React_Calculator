@@ -5,8 +5,14 @@ const Button = props => {
   const { name } = props;
   return (
     <div>
-      <h4>Button Component</h4>
-      <button type="button">{name}</button>
+      <p>
+        <button
+          type="button"
+          className="cal-button"
+        >
+          {name}
+        </button>
+      </p>
     </div>
   );
 };

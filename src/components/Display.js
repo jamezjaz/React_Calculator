@@ -5,9 +5,7 @@ const Display = props => {
   const { result } = props;
   return (
     <div>
-      <h4>Display Component</h4>
-      <p>
-        <span>Result: </span>
+      <p style={{ fontSize: '2rem' }}>
         {result}
       </p>
     </div>
