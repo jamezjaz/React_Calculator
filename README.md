@@ -23,7 +23,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jamezjaz/React_Calculator">
-    <img src="src/assets/readme/microverse.png" alt="Logo" width="80" height="80">
+    <img src="https://banner2.cleanpng.com/20180519/pzu/kisspng-scientific-calculator-app-store-5affd9dfbdc684.9104560015267168957773.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">React Calculator</h3>
