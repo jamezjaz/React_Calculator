@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <h3>REACT CALCULATOR</h3>
       </header>
-      <Display />
+      <Display result="5 * 5" />
       <ButtonPanel />
     </>
   );
