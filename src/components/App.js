@@ -1,4 +1,5 @@
 import '../App.css';
+import Button from './Button';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 
@@ -10,6 +11,7 @@ function App() {
       </header>
       <Display result="5 * 5" />
       <ButtonPanel />
+      <Button name="AC" />
     </>
   );
 }
