@@ -1,8 +1,8 @@
 .calculator-grid {
   display: grid;
-  justify-content: center;
-  min-height: 50vh;
   grid-template-columns: repeat(4, 100px);
+  justify-content: center;
+  min-height: 10vh;
 }
 
 .calculator-grid > button {
