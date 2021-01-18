@@ -1,3 +1,5 @@
+import operate from './operate';
+
 const calculate = (dataObject, buttonName) => {
   let { total, next, operation } = dataObject;
 
@@ -10,6 +12,12 @@ const calculate = (dataObject, buttonName) => {
     operation = '';
   } else if (buttonName === '%') {
     total /= 100;
+  } else if (buttonName === '=') {
+    if (total && next && operation) {
+      total = operate(total, next, operation);
+      next = '';
+      operation = '';
+    }
   }
   return { total, next, operation };
 };
