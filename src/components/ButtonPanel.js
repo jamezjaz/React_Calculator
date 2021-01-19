@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 import '../styles/ButtonPanel.css';
 
-const ButtonPanel = () => {
+const ButtonPanel = props => {
   const buttonGroups = {
     group1: {
       id: 1,
@@ -26,25 +27,36 @@ const ButtonPanel = () => {
     },
   };
 
+  const { clickHandler } = props;
+
   return (
     <div>
       <div className="calculator-grid">
-        {buttonGroups.group1.group.map(btn => (<Button name={btn} key={btn} />))}
+        {buttonGroups.group1.group.map(btn => (
+          <Button name={btn} key={btn} handleClick={clickHandler} />))}
       </div>
       <div className="calculator-grid">
-        {buttonGroups.group2.group.map(btn => (<Button name={btn} key={btn} />))}
+        {buttonGroups.group2.group.map(btn => (
+          <Button name={btn} key={btn} handleClick={clickHandler} />))}
       </div>
       <div className="calculator-grid">
-        {buttonGroups.group3.group.map(btn => (<Button name={btn} key={btn} />))}
+        {buttonGroups.group3.group.map(btn => (
+          <Button name={btn} key={btn} handleClick={clickHandler} />))}
       </div>
       <div className="calculator-grid">
-        {buttonGroups.group4.group.map(btn => (<Button name={btn} key={btn} />))}
+        {buttonGroups.group4.group.map(btn => (
+          <Button name={btn} key={btn} handleClick={clickHandler} />))}
       </div>
       <div className="calculator-grid">
-        {buttonGroups.group5.group.map(btn => (<Button name={btn} key={btn} className={btn === '0' ? 'span-two' : null} />))}
+        {buttonGroups.group5.group.map(btn => (
+          <Button name={btn} key={btn} handleClick={clickHandler} className={btn === '0' ? 'span-two' : null} />))}
       </div>
     </div>
   );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
