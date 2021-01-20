@@ -45,7 +45,7 @@ const ButtonPanel = props => {
           <Button
             name={btn}
             key={btn}
-            handleClick={() => clickHandler()}
+            handleClick={() => clickHandler(btn)}
           />
         ))}
       </div>
@@ -54,7 +54,7 @@ const ButtonPanel = props => {
           <Button
             name={btn}
             key={btn}
-            handleClick={() => clickHandler()}
+            handleClick={() => clickHandler(btn)}
           />
         ))}
       </div>
@@ -63,7 +63,7 @@ const ButtonPanel = props => {
           <Button
             name={btn}
             key={btn}
-            handleClick={() => clickHandler()}
+            handleClick={() => clickHandler(btn)}
           />
         ))}
       </div>
@@ -72,7 +72,7 @@ const ButtonPanel = props => {
           <Button
             name={btn}
             key={btn}
-            handleClick={() => clickHandler()}
+            handleClick={() => clickHandler(btn)}
             className={btn === '0' ? 'span-two' : null}
           />
         ))}

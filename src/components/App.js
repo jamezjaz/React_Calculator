@@ -26,7 +26,8 @@ class App extends React.Component {
       next: result.next,
       operation: result.operation,
     });
-    console.log('Testing');
+    // console.log('Testing');
+    // console.log(buttonName);
   }
 
   render() {
