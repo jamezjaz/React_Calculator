@@ -33,23 +33,49 @@ const ButtonPanel = props => {
     <div>
       <div className="calculator-grid">
         {buttonGroups.group1.group.map(btn => (
-          <Button name={btn} key={btn} handleClick={clickHandler} />))}
+          <Button
+            name={btn}
+            key={btn}
+            handleClick={() => clickHandler(btn)}
+          />
+        ))}
       </div>
       <div className="calculator-grid">
         {buttonGroups.group2.group.map(btn => (
-          <Button name={btn} key={btn} handleClick={clickHandler} />))}
+          <Button
+            name={btn}
+            key={btn}
+            handleClick={() => clickHandler()}
+          />
+        ))}
       </div>
       <div className="calculator-grid">
         {buttonGroups.group3.group.map(btn => (
-          <Button name={btn} key={btn} handleClick={clickHandler} />))}
+          <Button
+            name={btn}
+            key={btn}
+            handleClick={() => clickHandler()}
+          />
+        ))}
       </div>
       <div className="calculator-grid">
         {buttonGroups.group4.group.map(btn => (
-          <Button name={btn} key={btn} handleClick={clickHandler} />))}
+          <Button
+            name={btn}
+            key={btn}
+            handleClick={() => clickHandler()}
+          />
+        ))}
       </div>
       <div className="calculator-grid">
         {buttonGroups.group5.group.map(btn => (
-          <Button name={btn} key={btn} handleClick={clickHandler} className={btn === '0' ? 'span-two' : null} />))}
+          <Button
+            name={btn}
+            key={btn}
+            handleClick={() => clickHandler()}
+            className={btn === '0' ? 'span-two' : null}
+          />
+        ))}
       </div>
     </div>
   );
