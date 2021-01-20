@@ -11,12 +11,43 @@ const calculate = (dataObject, buttonName) => {
     next = '';
     operation = '';
   } else if (buttonName === '%') {
-    total /= 100;
+    if (next === '') {
+      total /= 100;
+    } else {
+      next /= 100;
+    }
   } else if (buttonName === '=') {
-    if (total && next && operation) {
+    if (operation !== null) {
       total = operate(total, next, operation);
       next = '';
       operation = '';
+    }
+  } else if (/^[0-9]+$/.test(buttonName)) {
+    if (operation === '') {
+      if (total[0] === '0' && buttonName === '0' && total[1] !== '.') {
+        total = '';
+      } else {
+        total = total.concat(buttonName);
+      }
+    } else if (next === '') {
+      next = next.concat(buttonName);
+    }
+  } else if (/[+|\-|/|x]/.test(buttonName)) {
+    if (total === '') {
+      total = 0;
+    }
+    operation = buttonName;
+  } else if (/[.]/.test(buttonName)) {
+    if (operation === null) {
+      if (total === null) {
+        total = 0 + buttonName;
+      } else if (!/[.]/.test(total)) {
+        total += buttonName;
+      }
+    } else if (next === null) {
+      next = 0 + buttonName;
+    } else if (!/[.]/.test(next)) {
+      next += buttonName;
     }
   }
   return { total, next, operation };

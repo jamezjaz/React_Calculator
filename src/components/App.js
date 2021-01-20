@@ -28,6 +28,7 @@ class App extends React.Component {
     });
     // console.log('Testing');
     // console.log(buttonName);
+    console.log(stateObj);
   }
 
   render() {
