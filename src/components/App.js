@@ -9,10 +9,10 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      total: null,
-      next: null,
+      total: '',
+      next: '',
       // eslint-disable-next-line react/no-unused-state
-      operation: null,
+      operation: '',
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -21,9 +21,10 @@ class App extends React.Component {
   handleClick = buttonName => {
     const stateObj = this.state;
     const result = calculate(stateObj, buttonName);
-    this.setState = ({
+    this.setState({
       total: result.total,
       next: result.next,
+      // eslint-disable-next-line react/no-unused-state
       operation: result.operation,
     });
     // console.log('Testing');
