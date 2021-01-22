@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const Display = props => {
   const { result } = props;
-  console.log(result);
   return (
     <div>
       <p style={{ fontSize: '2rem' }}>

@@ -41,19 +41,6 @@ const calculate = (dataObject, buttonName) => {
       total = 0;
     }
     operation = buttonName;
-  // } else if (/[.]/.test(buttonName)) {
-  //   console.log('Decimal');
-  //   if (operation === null) {
-  //     if (total === null) {
-  //       total = 0 + buttonName;
-  //     } else if (!/[.]/.test(total)) {
-  //       total += buttonName;
-  //     }
-  //   } else if (next === null) {
-  //     next = 0 + buttonName;
-  //   } else if (!/[.]/.test(next)) {
-  //     next += buttonName;
-  //   }
   } else if (buttonName === '.') {
     if (next && !next.includes(buttonName)) {
       next = next.concat(buttonName);
