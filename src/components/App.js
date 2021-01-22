@@ -33,8 +33,13 @@ class App extends React.Component {
   }
 
   render() {
-    const { total, next } = this.state;
-    const result = total || next || '0';
+    const { total, next, operation } = this.state;
+    let result = '0';
+    if (operation === '' && total !== '') {
+      result = total;
+    } else if (next !== '') {
+      result = next;
+    }
     return (
       <>
         <div className="App">
