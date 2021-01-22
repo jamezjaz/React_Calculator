@@ -12,9 +12,9 @@ const calculate = (dataObject, buttonName) => {
     operation = '';
   } else if (buttonName === '%') {
     if (next === '') {
-      total /= 100;
+      total = (total / 100).toString();
     } else {
-      next /= 100;
+      next = (next / 100).toString();
     }
   } else if (buttonName === '=') {
     if (operation !== null) {
@@ -32,7 +32,7 @@ const calculate = (dataObject, buttonName) => {
     } else if (next === '') {
       next = next.concat(buttonName);
     }
-  } else if (/[+|\-|/|x]/.test(buttonName)) {
+  } else if (/[+|\-|÷|X]/.test(buttonName)) {
     if (total === '') {
       total = 0;
     }
