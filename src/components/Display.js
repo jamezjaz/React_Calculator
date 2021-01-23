@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/Display.css';
 
 const Display = props => {
   const { result } = props;
   return (
-    <div>
-      <p style={{ fontSize: '2rem' }}>
+    <div className="display">
+      <p style={{ fontSize: '2rem', textAlign: 'end' }}>
         {result}
       </p>
     </div>
