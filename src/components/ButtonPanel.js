@@ -67,13 +67,12 @@ const ButtonPanel = props => {
           />
         ))}
       </div>
-      <div className="calculator-grid">
+      <div className="calculator-grid zero">
         {buttonGroups.group5.group.map(btn => (
           <Button
             name={btn}
             key={btn}
             handleClick={() => clickHandler(btn)}
-            className={btn === '0' ? 'span-two' : null}
           />
         ))}
       </div>
