@@ -1,11 +1,16 @@
 import React from 'react';
+import '../styles/Home.css';
+import logo from '../assets/logo.png';
 
 const Home = () => (
-  <div>
+  <div className="home">
     <h2>Hello there!</h2>
-    <p>
-      You&apos;re welcome to our page
-    </p>
+    <div className="welcome">
+      <h4>
+        You&apos;re welcome to our page
+      </h4>
+      <img src={logo} alt="logo" className="logo" />
+    </div>
     <p>
       In 1642, the first true “calculator” was invented: one that performed calculations
       through a clockwork-type of mechanism. The Pascal calculator, invented by French inventor

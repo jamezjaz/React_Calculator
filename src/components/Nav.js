@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => (
   <nav>
-    <h2>Math Magicians</h2>
+    <h2 style={{ color: 'white' }}>Math Magicians</h2>
     <ul className="nav-links">
-      <Link to="/">
+      <Link style={{ color: 'white', fontSize: '20px', fontWeight: 'bold' }} to="/">
         <li>Home</li>
       </Link>
-      <Link to="/calculator">
+      <Link style={{ color: 'white', fontSize: '20px', fontWeight: 'bold' }} to="/calculator">
         <li>Calculator</li>
       </Link>
-      <Link to="/quotes">
+      <Link style={{ color: 'white', fontSize: '20px', fontWeight: 'bold' }} to="/quotes">
         <li>Quotes</li>
       </Link>
     </ul>
