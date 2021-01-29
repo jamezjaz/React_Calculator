@@ -1,0 +1,13 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #282C34;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  list-style-type: none;
+}
