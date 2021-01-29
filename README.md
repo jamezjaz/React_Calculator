@@ -44,6 +44,7 @@
 ## Table Of Contents
 
 * [About The Project](#about-the-project)
+* [Preview](#preview)
 * [Live Demo](#live-demo)
 * [Built With](#built-with)
 * [Getting Started](#getting-started)
@@ -54,6 +55,9 @@
 ## About The Project
 
 This is a real world standard calculator used for series of mathematical operations. It is designed with React, a JavaScript library for building user interfaces.
+
+## Preview
+![Calculator](https://user-images.githubusercontent.com/57812000/106326689-7ed23100-6242-11eb-8def-c5604f6f1904.png)
 
 ## Live Demo
 It's deployed [here](https://react-calculator-project.herokuapp.com/) on heroku
