@@ -36,10 +36,10 @@ class App extends React.Component {
     }
     return (
       <>
+        <header className="App-header">
+          <h3>REACT CALCULATOR</h3>
+        </header>
         <div className="App">
-          <header className="App-header">
-            <h3>REACT CALCULATOR</h3>
-          </header>
           <Display result={result} />
           <ButtonPanel clickHandler={this.handleClick} />
         </div>

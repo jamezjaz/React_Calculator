@@ -1,19 +1,5 @@
-.calculator-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
+.button-panel {
+  display: flex;
   justify-content: center;
-  min-height: 10vh;
-}
-
-.cal-button {
-  font-size: 2rem;
-  width: 6rem;
-  height: 3.5rem;
-}
-
-.zero > :first-child {
-  grid-column: span 2;
-  height: 4.5rem;
-  background-color: #efefef;
-  margin-right: 0.2rem;
+  height: 100px;
 }

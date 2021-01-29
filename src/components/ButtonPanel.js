@@ -31,48 +31,54 @@ const ButtonPanel = props => {
 
   return (
     <div>
-      <div className="calculator-grid">
+      <div className="button-panel">
         {buttonGroups.group1.group.map(btn => (
           <Button
             name={btn}
             key={btn}
             handleClick={() => clickHandler(btn)}
+            color={['÷'].includes(btn) ? 'orange' : ''}
           />
         ))}
       </div>
-      <div className="calculator-grid">
+      <div className="button-panel">
         {buttonGroups.group2.group.map(btn => (
           <Button
             name={btn}
             key={btn}
             handleClick={() => clickHandler(btn)}
+            color={['X'].includes(btn) ? 'orange' : ''}
           />
         ))}
       </div>
-      <div className="calculator-grid">
+      <div className="button-panel">
         {buttonGroups.group3.group.map(btn => (
           <Button
             name={btn}
             key={btn}
             handleClick={() => clickHandler(btn)}
+            color={['-'].includes(btn) ? 'orange' : ''}
           />
         ))}
       </div>
-      <div className="calculator-grid">
+      <div className="button-panel">
         {buttonGroups.group4.group.map(btn => (
           <Button
             name={btn}
             key={btn}
             handleClick={() => clickHandler(btn)}
+            color={['+'].includes(btn) ? 'orange' : ''}
           />
         ))}
       </div>
-      <div className="calculator-grid zero">
+      <div className="button-panel zero">
         {buttonGroups.group5.group.map(btn => (
           <Button
             name={btn}
             key={btn}
             handleClick={() => clickHandler(btn)}
+            color={['='].includes(btn) ? 'orange' : ''}
+            wide={btn === '0'}
           />
         ))}
       </div>
