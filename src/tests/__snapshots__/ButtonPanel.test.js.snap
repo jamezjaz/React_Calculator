@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`<ButtonPanel /> renders correctly 1`] = `
 <div>
   <div
     className="button-panel"
