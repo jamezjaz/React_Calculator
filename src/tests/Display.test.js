@@ -4,7 +4,7 @@ import Display from '../components/Display';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Display />)
+    .create(<Display result='0' />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
