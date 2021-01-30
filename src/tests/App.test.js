@@ -17,15 +17,17 @@ it('it renders correctly', () => {
 });
 
 describe('<App />', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  });
+
   it('renders Display correctly', () => {
-    let wrapper = shallow(<App />);
     expect(wrapper.find(Display)).toHaveLength(1);
   });
-});
 
-describe('<App />', () => {
   it('renders ButtonPanel correctly', () => {
-    let wrapper = shallow(<App />);
     expect(wrapper.find(ButtonPanel)).toHaveLength(1);
   });
 });
