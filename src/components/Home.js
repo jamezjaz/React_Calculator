@@ -4,7 +4,7 @@ import logo from '../assets/logo.png';
 
 const Home = () => (
   <div className="home">
-    <h2>Hello there!</h2>
+    <h2 className="heading">Hello there!</h2>
     <div className="welcome">
       <h4>
         You&apos;re welcome to our page
