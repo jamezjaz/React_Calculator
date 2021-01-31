@@ -26,7 +26,7 @@ describe('<Nav />', () => {
   });
 
   it('h2 element has a text', () => {
-    const h2 = wrapper.find('.logo');
+    const h2 = wrapper.find('.my-logo');
     expect(h2.text()).toEqual('Math Magicians');
   });
 

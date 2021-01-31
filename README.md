@@ -66,6 +66,9 @@ It's deployed [here](https://react-calculator-project.herokuapp.com/) on heroku
 This project was built using these technologies.
 * React
 * JavaScript
+* Jest
+* Enzyme
+* React Testing Library
 * GitHub Action :muscle:
 * Eslint
 * Stylelint
@@ -98,15 +101,17 @@ To get a local copy up and running follow these simple example steps.
  - cd to React_Calculator
 ### Setup
 
-Install dependencies:
+To install dependencies:
 
-```
-$ npm install
-```
+Run ```$ npm install```
 
-Start the local webserver:
+To start the local webserver and have the calculator run live on http://localhost:3000/:
 
-```$ npm start``` will open the calculator at local webserver at http://localhost:3000/ 
+Run ```$ npm start```
+
+To run tests:
+
+Run ```$ npm run test``` or simply ```$ npm test```
 
 
 <!-- CONTACT -->

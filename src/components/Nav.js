@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => (
   <nav>
-    <h2 className="logo" style={{ color: 'white' }}>Math Magicians</h2>
+    <h2 className="my-logo" style={{ color: 'white' }}>Math Magicians</h2>
     <ul className="nav-links">
       <Link style={{ color: 'white', fontSize: '20px', fontWeight: 'bold' }} to="/">
         <li>Home</li>
