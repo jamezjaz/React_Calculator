@@ -1,0 +1,23 @@
+body {
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  justify-content: flex-end;
+  margin: 0 auto 20px auto;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+  color: white;
+  margin-bottom: 5px;
+}

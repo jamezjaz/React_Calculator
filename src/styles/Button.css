@@ -1,0 +1,23 @@
+button {
+  font-size: 40px;
+  width: 180px;
+  height: 100px;
+  border: 1.5px solid #d1d1d1;
+  outline: none;
+}
+
+button:hover {
+  background-color: #bebbbb;
+}
+
+.orange {
+  background-color: #f3903e;
+}
+
+.orange:hover {
+  background-color: #ce7934;
+}
+
+.wide {
+  width: 360px;
+}
