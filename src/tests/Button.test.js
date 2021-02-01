@@ -1,16 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
-import '@testing-library/jest-dom'
-import Button from '../components/Button';
-import Enzyme from 'enzyme';
+import '@testing-library/jest-dom';
 import Adapter from 'enzyme-adapter-react-16';
- 
+import Button from '../components/Button';
+
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('<Button />', () => {
-
   it('renders correctly', () => {
     const tree = renderer
       .create(<Button />)
@@ -19,7 +17,8 @@ describe('<Button />', () => {
   });
 
   it('it contains a button', () => {
-    let wrapper = shallow(<Button />);
+    const wrapper = shallow(<Button />);
+    // eslint-disable-next-line
     const button = <button></button>;
     expect(wrapper.containsMatchingElement(button)).toBe(true);
   });

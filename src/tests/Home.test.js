@@ -1,12 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
-import '@testing-library/jest-dom'
-import Enzyme from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
+import '@testing-library/jest-dom';
 import Adapter from 'enzyme-adapter-react-16';
- 
-Enzyme.configure({ adapter: new Adapter() });
 import Home from '../components/Home';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('<Home />', () => {
   let wrapper;
@@ -21,7 +20,7 @@ describe('<Home />', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-  
+
   it('it contains a h2 element', () => {
     const h2 = <h2>Hello there!</h2>;
     expect(wrapper.containsMatchingElement(h2)).toBe(true);

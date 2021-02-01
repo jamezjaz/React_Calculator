@@ -1,13 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
-import Enzyme from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
- 
-Enzyme.configure({ adapter: new Adapter() });
 import App from '../components/App';
 import Display from '../components/Display';
 import ButtonPanel from '../components/ButtonPanel';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 it('it renders correctly', () => {
   const tree = renderer

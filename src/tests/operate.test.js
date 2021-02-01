@@ -1,5 +1,5 @@
 import Big from 'big.js';
-import operate from "../logic/operate";
+import operate from '../logic/operate';
 
 describe('operate function', () => {
   let numOne;
@@ -27,8 +27,8 @@ describe('operate function', () => {
   });
 
   it('returns the % of two numbers', () => {
-      const numOne = Big(50);
-      const numTwo = Big(100);
+    const numOne = Big(50);
+    const numTwo = Big(100);
     expect(operate(numOne, numTwo, '%')).toEqual('50');
   });
 });

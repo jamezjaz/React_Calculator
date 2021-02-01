@@ -1,10 +1,9 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import Enzyme from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
- 
-Enzyme.configure({ adapter: new Adapter() });
 import Nav from '../components/Nav';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('<Nav />', () => {
   let wrapper;
@@ -15,13 +14,13 @@ describe('<Nav />', () => {
 
   it('<ul> element has a <li> element', () => {
     const ul = wrapper.find('.nav-links');
-    const li = <li>Home</li>
+    const li = <li>Home</li>;
     expect(ul.containsMatchingElement(li)).toBe(true);
   });
 
   it('should fail if <li> text incorrect', () => {
     const ul = wrapper.find('.nav-links');
-    const li = <li>About</li>
+    const li = <li>About</li>;
     expect(ul.containsMatchingElement(li)).toBe(false);
   });
 

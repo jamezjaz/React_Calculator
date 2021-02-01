@@ -1,5 +1,4 @@
 import Big from 'big.js';
-// import React from 'react';
 import calculate from '../logic/calculate';
 
 describe('calculate function', () => {
@@ -47,7 +46,6 @@ describe('calculate function', () => {
     const calculator = { total: '10', next: '2.5', operation: '+' };
     expect(calculate(calculator, '=')).toEqual({ total: Big('12.5').toJSON(), next: '', operation: '' });
   });
-
 
   it('+ operation without equality', () => {
     const calculator = { total: '10', next: '2.5', operation: '+' };
